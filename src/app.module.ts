@@ -7,7 +7,7 @@ import { CommonModule } from './modules/common/common.module';
 import { CoreModule } from './modules/core/core.module';
 
 @Module({
-  imports: [UserModule, AuthModule, CommonModule, CoreModule],
+  imports: [UserModule, AuthModule, CoreModule],
   controllers: [AppController],
   providers: [AppService],
 })
