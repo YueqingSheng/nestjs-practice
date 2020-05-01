@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>{{page}}</title>
+</head>
+
+<body>
+    <h1> {{title}} </h1>
+    <input type="text" id="message">
+    <button id="main-button">Submit</button>
+    <div id="message-list"></div>
+
+    <script>
+      const p = document.createElement('p');
+      const text = document.createTextNode(data);
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", 'https://vast-reaches-02757.herokuapp.com/api/waterloo', false ); 
+      xmlHttp.send( null );
+      const data = xmlHttp.responseText;
+      console.log(data);
+    </script>
+</body>
+
+</html>
